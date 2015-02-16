@@ -1,6 +1,7 @@
-# Gandalf
+# Ki
 
 ## Code Styleguides
+use the built-in ```gulp dogen``` cli to scaffold modules in server & client
 
 ### AngularJs Code Styleguides
 1. Following the angularjs [blog post](http://blog.angularjs.org/2014/02/an-angularjs-style-guide-and-best.html), follow these [Best Practices Recommendations by the angular team](https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/pub)

@@ -83,3 +83,5 @@ After a branch has been merged to dev or master AND it's purpose is done, it sho
 In github, a **"Delete Branch"** button is available right after the merge process is done.
 
 If the merge is a midway integration merge, then you can still work on your branch and open another pull request.
+
+__based on angular fullstack yeoman generator__

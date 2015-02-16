@@ -1,0 +1,17 @@
+node_modules/
+bower_components/
+
+dist
+.tmp
+.sass-cache
+src/client/bower_components
+*.css
+*.map
+*.log
+src/client/bundle*.js
+src/server/logs/*.log
+src/client/templates.mdl.js
+src/client/vendors.js
+src/client/assets/sprite.png
+src/client/assets/sprite.css
+src/client/assets/sprite-map.html

@@ -1,0 +1,12 @@
+<div class="grid">
+	<div class="col-md-12 headers">
+		<div ng-repeat="header in headers" class="grid-header col-md-{{header.col}}">
+			{{header.label}}
+		</div>
+	
+	</div>
+
+	<div class="col-md-12 body">
+		<grid-item ng-repeat="item in items | filter:filterObj:strict" model="item" ng-click="itemClick(item)"></grid-item>
+	</div>
+</div>

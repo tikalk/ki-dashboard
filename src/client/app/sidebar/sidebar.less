@@ -1,0 +1,130 @@
+@import "../../styles/app-variables.less";
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: @sidebar-menu-width;
+}
+
+#sidebar-wrapper {
+    z-index: @zindex-navbar;
+    position: fixed;
+    left: @sidebar-menu-width;
+    width: @sidebar-menu-width;
+    height: 100%;
+    margin-left: -@sidebar-menu-width;
+    overflow: hidden;
+    background: @b15;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-right: 1px solid @t2;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: @sidebar-menu-width;
+}
+
+#page-content-wrapper {
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -@sidebar-menu-width;
+}
+
+/* Sidebar Styles */
+.sidebar-nav {
+    width: @sidebar-menu-width;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        line-height: 40px;
+
+        a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            color: @t2;
+            padding-top: 13px;
+            padding-bottom: 8px;
+
+            .nav-label {
+                text-transform: uppercase;
+                font-size: 1rem;
+                line-height: 28px;
+            }
+            
+            .nav-icon {
+                margin: 0 auto;
+            }
+        }
+
+    }
+
+    li a:hover,
+    li.active a {
+        text-decoration: none;
+        color: @t1;
+        background-color: @b1;
+
+        .nav-icon {
+        }
+    }
+
+    li a:active,
+    li a:focus {
+        text-decoration: none;
+    }
+
+}
+
+.sidebar-brand {
+    background: url(../assets/logo.png) no-repeat center center;
+    height: 8rem;
+    margin-bottom: 40px;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: @sidebar-menu-width;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: @sidebar-menu-width;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+.version-details {
+    position: absolute;
+    bottom: 0;
+
+    .btn {
+        font-size: .8em;
+        padding: 0;
+    }
+}

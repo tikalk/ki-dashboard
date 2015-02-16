@@ -1,0 +1,24 @@
+<div class="modal-content communication-modal">
+	<div class="modal-header">
+		<h4 class="modal-title">Please Login</h4>
+	</div>
+	<div class="modal-body">
+		<form ng-submit="$close()">
+			<div class="row form-group">
+				<label class="col-sm-12 control-label">Name:</label>
+				<div class="col-sm-12">
+					<input type="text" class="form-control" placeholder="Username" ng-model="vm.selected.username" ng-enter="$close()" name="username">
+				</div>
+			</div>
+			<div class="row form-group">
+				<label class="col-sm-12 control-label">Password:</label>
+				<div class="col-sm-12">
+					<input type="password" class="form-control" placeholder="Password" ng-model="vm.selected.password" ng-enter="$close()" name="password">
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-secondary pull-right" ng-disabled="false" ng-click="$close()" >Login</button>
+	</div>
+</div>

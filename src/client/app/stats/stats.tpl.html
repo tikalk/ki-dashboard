@@ -1,0 +1,13 @@
+
+	<ul class="list-inline clearfix stats">
+		
+		<li ng-repeat="item in items" class="stat-item">
+			<div class="panel panel-default">
+				<div class="panel-heading">{{item.label}}</div>
+				<div class="panel-body">
+					{{item.value | number}}
+				</div>
+			</div>
+		</li>
+
+	</ul>

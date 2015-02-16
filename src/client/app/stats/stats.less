@@ -1,0 +1,38 @@
+@import "../../styles/app-variables.less";
+.reset-style() {
+	border-radius: 0;
+	border: none;
+	background: transparent;
+}
+.stats {
+
+	.stat-item {
+		margin-top: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+		border-left: 1px solid lighten(@t1, 35%);
+		line-height: 1rem;
+	}
+	.panel {
+		.reset-style();
+		box-shadow: none;
+		margin-bottom: 0;
+	}
+	.panel-heading {
+		.reset-style();
+		padding: 0;
+		font-size: 1rem;
+		text-transform: uppercase;
+		color: @t2;
+		font-weight: bold;
+	}
+
+	.panel-body {
+		.reset-style();
+		color: @t1;
+		padding: 0;
+		line-height: 3rem;
+		font-size: @font-size-6;
+		font-weight: bold;
+	}
+}

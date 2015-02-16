@@ -1,0 +1,17 @@
+<div class="row grid-item">
+	<div class="col-md-{{getPropVal(prop, 'col')}}" ng-repeat="prop in props">
+		
+		<label for="{{:: model.id}}">
+			<input ng-if="getPropVal(prop, 'checkbox')" id="{{:: model.id}}" ng-style="style" type="checkbox" ng-model="state.checked" ng-change="onChange()"> 
+	    	{{model[prop]}}
+	    </label>
+	</div>
+	<!-- <div class="col-md-{{getPropVal('actions', 'col')}}">
+		<ul class="list-inline">
+			<li ng-repeat="action in model.actions">
+				<i class="glyphicon glyphicon-{{:: getActionIcon(action)}}"></i>
+			</li>
+		</ul>
+	</div> -->
+
+</div>

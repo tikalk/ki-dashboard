@@ -1,0 +1,79 @@
+@import "../../../styles/app-variables.less";
+
+.grid {
+	.headers {
+		.grid-header {
+			line-height: @line-height-header;
+			font-size: @font-size-header;
+			font-weight: @headings-font-weight;
+			background: @brand-primary;
+			color: @inverse;
+			border-right: 1px solid;
+
+			&:first-child {
+				border-top-left-radius: @border-radius-base;
+				border-bottom-left-radius: @border-radius-base;
+			}
+
+			&:last-child {
+				border-top-right-radius: @border-radius-base;
+				border-bottom-right-radius: @border-radius-base;
+				border-right: 0px;
+			}
+
+
+		}
+	}
+
+	.body {
+		.grid-item {
+			background: @gray-light;
+			padding: 0;
+			margin: 3px 0;
+			border-radius: @border-radius-base;
+
+			i {
+				font-size: 1.5rem;
+				border: 1px solid;
+				border-radius: 50%;
+				padding: 6px;
+			}
+
+			&:hover {
+				background: lighten(@gray, 25%);
+			}
+
+			// input[type=checkbox] {
+			// 	display: none;
+			// 	+ label i {
+			// 		display: none;
+			// 	}
+			// 	// unchecked square
+			// 	+ label:before {
+			// 		content: ' ';
+			// 		height: 40px;
+			// 		width: 40px;
+			// 		border: 1px solid;
+			// 		border-radius: 4px;
+			// 		display: inline-block;
+			// 		vertical-align: middle;
+			// 		cursor: pointer;
+			// 	}
+			// 	&:checked {
+			// 		~ label {
+			// 			// the checkmark
+			// 			i {
+			// 				display: inline-block;
+			// 				position: absolute;
+			// 				top: 4px;
+			// 				left: 20px;
+			// 				border: none;
+			// 				font-size: 2rem;
+			// 				cursor: pointer;
+			// 			}
+			// 		}
+			// 	}
+			// }
+		}
+	}
+}

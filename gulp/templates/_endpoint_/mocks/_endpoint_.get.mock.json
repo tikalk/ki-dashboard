@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "name": "Come pain"
+  },
+  {
+    "id": "2",
+    "name": "Tasting good"
+  },
+
+  {
+    "id": "3",
+    "name": "Campaign without Recurrence"
+  },
+
+  {
+    "id": "4",
+    "name": "Campaign with with 'Run Later' selected"
+  },
+  {
+    "id": "5",
+    "name": "Old campaign"    
+  }
+]

@@ -1,12 +1,13 @@
 # Ki
+
 Ki-dashboard (pronounced - "Chi") is a fork of angular-fullstack yeoman generators.  
-Its has few adjusments:
-1. it is integrated with [bootstrap admin 2 dashboard](http://startbootstrap.com/template-overviews/sb-admin-2/)
-2. it is integrated with ui-router for angular
-3. its task automation system is gulp
-4. It uses simple scaffolding with [gulp-dogen](https://www.npmjs.com/package/gulp-dogen) tool - so you can update & add any scaffold templates relevant to your project right inside the 'gulp' directory (it means - no need for yeoman)
-5. client & server are decoupled
-6. * Eventualy - this repo should include web-components (directives in angular) to create the various widgets available through the bootstrap admin 2 dashboard template
+Its has few adjusments:  
+1. it is integrated with [bootstrap admin 2 dashboard](http://startbootstrap.com/template-overviews/sb-admin-2/)  
+2. it is integrated with ui-router for angular  
+3. its task automation system is gulp  
+4. It uses simple scaffolding with [gulp-dogen](https://www.npmjs.com/package/gulp-dogen) tool - so you can update & add any scaffold templates relevant to your project right inside the 'gulp' directory (it means - no need for yeoman)  
+5. client & server are decoupled  
+6. * Eventualy - this repo should include web-components (directives in angular) to create the various widgets available through the bootstrap admin 2 dashboard template  
 
 ## Code Styleguides
 use the built-in ```gulp dogen``` cli to scaffold modules in server & client

@@ -1,4 +1,12 @@
 # Ki
+Ki-dashboard (pronounced - "Chi") is a fork of angular-fullstack yeoman generators.  
+Its has few adjusments:
+1. it is integrated with [bootstrap admin 2 dashboard](http://startbootstrap.com/template-overviews/sb-admin-2/)
+2. it is integrated with ui-router for angular
+3. its task automation system is gulp
+4. It uses simple scaffolding with [gulp-dogen](https://www.npmjs.com/package/gulp-dogen) tool - so you can update & add any scaffold templates relevant to your project right inside the 'gulp' directory (it means - no need for yeoman)
+5. client & server are decoupled
+6. * Eventualy - this repo should include web-components (directives in angular) to create the various widgets available through the bootstrap admin 2 dashboard template
 
 ## Code Styleguides
 use the built-in ```gulp dogen``` cli to scaffold modules in server & client
@@ -71,17 +79,5 @@ Each feature branch should be named with a prefix of "**feature-**", so that the
 
 i.e., a branch for feature of date picker should be named:
 **feature-date-picker**
-
-### Merge Process for Feature Branch
-A Feature branch should be merged to dev, master or other desired branch by using github's Pull Request Feature. 
-Pull Request should promote code review before the merge is done.
-
-This should allow safe merge process and prevent merge with conflicts.
-
-### Steps after Merge
-After a branch has been merged to dev or master AND it's purpose is done, it should be deleted. 
-In github, a **"Delete Branch"** button is available right after the merge process is done.
-
-If the merge is a midway integration merge, then you can still work on your branch and open another pull request.
 
 __based on angular fullstack yeoman generator__

@@ -18,7 +18,8 @@
     "jqueryui": "~1.11.2",
     "angular-jwt": "~0.0.6",
     "a0-angular-storage": "~0.0.9",
-    "angular-http-auth": "~1.2.2"
+    "angular-http-auth": "~1.2.2",
+    "angular-openlayers-directive": "~0.0.3"
   },
   "ignore": [
     "**/.*",

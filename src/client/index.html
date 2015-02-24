@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Ful-Lap</title>
+
+  <link rel="stylesheet" href="bower_components/openlayers3/build/ol.css">
+  <link rel="stylesheet" href="bower_components/angular-openlayers-directive/dist/angular-openlayers-directive.css">
   <link rel="stylesheet" href="app.css">
 
   <!-- Disable browser cache -->
@@ -251,6 +254,15 @@
                     <!-- /.col-lg-12 -->
                 </div>
                 <!-- /.row -->
+                <div class="row" ng-controller="MapCtrl">
+                    <div class="col-lg-12">
+                        <openlayers
+                                ol-defaults="mapProps.defaults"
+                                height="480px"
+                                width="100%">
+                        </openlayers>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="panel panel-primary">
@@ -797,6 +809,7 @@
    <script src="bower_components/angular/angular.js"></script>
    <script src="bower_components/jqueryui/jquery-ui.min.js"></script>
    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script src="bower_components/openlayers3/build/ol.js"></script>
    -->
 
    <!-- 3RD PARTY -->
@@ -807,12 +820,14 @@
    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+   <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
    <script src="bower_components/ng-file-upload/angular-file-upload.min.js"></script>
    <script src="bower_components/angular-ui-grid/ui-grid.min.js"></script>
    <script src="bower_components/angular-dragdrop/src/angular-dragdrop.min.js"></script>
    <script src="bower_components/angular-ui-select/dist/select.min.js"></script>
    <script src="bower_components/moment/min/moment.min.js"></script>
    <script src="bower_components/angular-ui-sortable/sortable.min.js"></script>
+   <script src="bower_components/angular-openlayers-directive/dist/angular-openlayers-directive.min.js"></script>
    -->
    <!-- endbuild -->
 

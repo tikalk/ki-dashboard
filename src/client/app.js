@@ -4,11 +4,14 @@ angular.module('ki', [
 	'http-auth-interceptor',
 	'login',
 	'sidebar',
+  'map',
 	'ki.directives',
 	'htmlTemplates',
 	'ki.resources',
 	'angular-jwt',
-	'angular-storage'
+	'angular-storage',
+  'ngSanitize',
+  'openlayers-directive'
 ])
 
 .run(function(){

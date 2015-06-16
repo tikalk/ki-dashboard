@@ -28,7 +28,7 @@ use the built-in ```gulp dogen``` cli to scaffold modules in server & client
 
 ## Prerequisites
 1. Install NodeJS - http://nodejs.org/ or via [command line](https://github.com/joyent/node/wiki/installing-node.js-via-package-manager)
-2. Gupljs: ```npm install -g gulp```
+2. Gulpjs: ```npm install -g gulp```
 3. Bower: ```npm install -g bower```
 4. Phantomjs (client testing): ```npm install phantomjs```
 5. Karma (client test runner): ```npm install -g karma```
@@ -50,8 +50,6 @@ Open <http://localhost:8080>
  ``` gulp test ```
 * Create distribution zip
  ``` gulp dist ```
-
-This command create "distribution zip" file in the "dist" folder.
 
 ## Development environment
 ### Automation
@@ -79,6 +77,6 @@ The guideline is to work in a feature branch flow as described well in [Github's
 Each feature branch should be named with a prefix of "**feature-**", so that the automation won't run any tests, build etc.. on these branches.
 
 i.e., a branch for feature of date picker should be named:
-**feature-date-picker**
+**feature-guitars-store**
 
 __based on angular fullstack yeoman generator__

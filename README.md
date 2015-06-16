@@ -65,11 +65,6 @@ open in chrome <http://127.0.0.1:8081/debug?port=5858>
 Please note that you must invoke the build command before invoking dev-mode (one time only).
 ``` gulp build ```
 
-## Teamcity Integration
-
-## Issues Tracking
-
-
 ## Git & Github Guidelines
 The guideline is to work in a feature branch flow as described well in [Github's Scott's blog post](http://scottchacon.com/2011/08/31/github-flow.html)
 

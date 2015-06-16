@@ -7,7 +7,6 @@ var restUrl = config.restUrl + '/_endpoint_';
 exports.index = get;
 exports.create = create;
 exports.update = update;
-exports.clone = clone;
 
 function get (req, res) {
 	rest.get(restUrl).on('complete', handleGet);
